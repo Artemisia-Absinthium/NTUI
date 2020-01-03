@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="10" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="hqtileset" tilewidth="50" tileheight="50">
+  <image source="images/hqtileset.png" width="1200" height="1200"/>
+ </tileset>
+ <tileset firstgid="577" name="hero" tilewidth="44" tileheight="96">
+  <image source="images/hero.png" width="220" height="960"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="hero"/>
+    <property name="name" value="Hero"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="627" name="sienne" tilewidth="73" tileheight="95">
+  <image source="images/sienne.png" width="584" height="190"/>
+  <tile id="8">
+   <properties>
+    <property name="_the" value="Sienne"/>
+    <property name="name" value="Sienne"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Calque de Tile 1" width="40" height="10">
+  <data encoding="base64" compression="zlib">
+   eJx7ysjA8HQUj+JRPIpH8SgmEQMAIWpncA==
+  </data>
+ </layer>
+ <layer name="map" width="40" height="10">
+  <data encoding="base64" compression="zlib">
+   eJw7y8jAcHaQ48EKhpv7HtPOKVgByG13iHTfYwbquc+BEYHxAWLcdwoJD0b3/YbiU1RyGwhQy32PGQe3+0AAOX6pBUhx32DHAMxfYAc=
+  </data>
+ </layer>
+ <layer name="Calque 2" width="40" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DoAklGBgYpIJYGYhnGgXYNJjAEuskIiI2B2GQQus8T6CYvIPYGYh8au+8REK8F4nVQNjEgEeimJCBOBuIUGrvvFxAfBeJjUPYoIAwAsF4Klw==
+  </data>
+ </layer>
+ <layer name="Calque 4" width="40" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwx3oMw20CzCBAZluyqcCHkygmZGBoYVxoF2BG8wGum0Oldz3DMkcMSqlyc1AM7fgcR/Mzh1AeieUvQ1Ib8ei5x+SmB6V3HcaaOYZPO6D2XkBSF+Ess8B6fODOE0gAwAbMRc/
+  </data>
+ </layer>
+ <objectgroup name="objects" width="40" height="10">
+  <object gid="577" x="50" y="450">
+   <properties>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+  <object name="Wall" x="14" y="232" width="39" height="184">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="397" y="265" width="39" height="184">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1447" y="223" width="43" height="216">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Sienne" gid="635" x="1150" y="450">
+   <properties>
+    <property name="_the" value="Sienne"/>
+    <property name="name" value="Sienne"/>
+   </properties>
+  </object>
+  <object name="Wall" x="570" y="152" width="33" height="146">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="519" y="301" width="33" height="146">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

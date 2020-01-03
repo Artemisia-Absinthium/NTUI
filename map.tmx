@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="tileset" tilewidth="50" tileheight="50">
+  <image source="images/tileset.png" trans="00aa00" width="500" height="400"/>
+  <tile id="7">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="_the" value="wall"/>
+    <property name="name" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="_the" value="wall"/>
+    <property name="name" value="wall"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="81" name="hero" tilewidth="44" tileheight="96">
+  <image source="images/hero.png" trans="da0256" width="220" height="960"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="hero"/>
+    <property name="name" value="Hero"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="131" name="Spawner" tilewidth="32" tileheight="32">
+  <image source="images/Spawner.png" width="64" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="ZombieSpawner"/>
+    <property name="name" value="ZombieSpawner"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="_the" value="SpawnerActivator"/>
+    <property name="name" value="SpawnerActivator"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="_the" value="BullySpawner"/>
+    <property name="name" value="BullySpawner"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="_the" value="NerdSpawner"/>
+    <property name="name" value="NerdSpawner"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="map" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt20tPwkAYhtF6QxIvFLoi+v9/p7No42jQIJT2LZ7FCbYY6XwPA3HRddM0ayLsA66By/S4KW6Lu+I+YG1LNGaPp+K5eCleA9a2RD6vsuiRRY8semQZq8fDD+Ze39LYH1nO6bEKuP5rY39kGfP7Y1V5DFjbEtkf0zj2s/2cHsOesBfGc2wPs8/qwen+8l7WI8tvPbpiV2yKbf84HHcB136N9tWct/2ch3kPsz90vK3ObyrD39n1z3XVz/W57bfzm4nUr9VW11+/79rervm6vq56rl5P+8Pv7A4cH5pZW83jbeL+c3tfgLlnpIceyeaekR56JJt7Rnzy/2AWPbLokUWPLHpk0SOLHln0yKJHFj2y6JFFjyx6ZNEjix5Z9MiiRxY9suiRRY8semTRI4seWfTIokcWPbLoMY0p7ndmfHpk0ePy3O+8XHpk+W893O8MAAAAAAAAAAAAAAAAAAAAnOIDYJRQ2A==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="100" height="100">
+  <object gid="81" x="123" y="918">
+   <properties>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+  <object gid="132" x="620" y="848">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object name="Wall" x="4945" y="5" width="92" height="968">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object gid="132" x="2730" y="928">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Spawn" width="100" height="100">
+  <object gid="131" x="921" y="860">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="133" x="987" y="857">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="134" x="1072" y="861">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="133" x="3951" y="881">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="134" x="2054" y="400">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="131" x="3885" y="884">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="133" x="4235" y="905">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="134" x="4033" y="752">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="131" x="3857" y="851">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

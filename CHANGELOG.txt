@@ -1,0 +1,38 @@
+////// NTUI CHANGELOG \\\\\\
+
+TODO
+- Se baisser
+- Baisser difficulté
+- Indiquer fin d'un bug
+
+-- version 1.2 ------
+
+- Correction du bug de disparition de la balle dans certaines conditions au casse-brique
+- Ajout du menu de pause dans les mini-jeux
+- Ajout d'un message d'aide à la première visite de la planque
+- Ajout d'un message d'avertissement avant de commencer le niveau 0
+- Ajout d'un nouveau bogue permettant de récupérer de la vie
+- Complétion de l'encyclopédie avec le nouveau bogue
+- Précision du message d'information du shooter
+- Traduction du sous-titre du shooter
+- Diminution du volume de la musique
+
+-- version 1.1 ------
+
+- Ajout du support de la souris en jeu
+- Ajout explication des commandes pour une nouvelle partie
+- Corrections des textes
+- Correction blocage des effets dans les crédits
+- Correction d'un crash chez certains joueurs au lancement du shooter du 1er boss
+- Correction d'un bug de collision à l'entrée du boss du niveau 1
+- Correction des touches claviers pour le shooter
+- Optimisation des performances du jeu pendant les niveaux
+- Modification des touches par défaut pour libérer la touche Espace (touche d'interaction)
+- Ajustement de la hitbox du héros, les nerds ne le touchent plus lorsqu'ils tirent juste au-dessus de lui
+- Le niveau d'introduction s'arrête automatiquement au bout de 20 secondes si vous n'êtes pas encore mort
+- Suppression du menu de pause dans le niveau bogué (comme ça vous ne partirez pas en disant que le jeu est complètement bogué :) )
+- Documentation et commentaire du code
+
+-- version 1.0 -------
+
+- Première release stable

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="55" height="12" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="hqtileset" tilewidth="50" tileheight="50">
+  <image source="images/hqtileset.png" width="1200" height="1200"/>
+  <tile id="0">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="577" name="hqHero" tilewidth="176" tileheight="384">
+  <image source="images/hqHero.png" width="880" height="768"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="HqHero"/>
+    <property name="name" value="HqHero"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="587" name="ishmael" tilewidth="400" tileheight="400">
+  <image source="images/ishmael.png" width="800" height="400"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="Ishmael"/>
+    <property name="name" value="Ishmael"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="589" name="meryl" tilewidth="400" tileheight="400">
+  <image source="images/meryl.png" width="1200" height="400"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="Meryl"/>
+    <property name="name" value="Meryl"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="592" name="table" tilewidth="200" tileheight="200">
+  <image source="images/table.png" width="200" height="200"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="Book"/>
+    <property name="name" value="Book"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="593" name="mapwall" tilewidth="300" tileheight="150">
+  <image source="images/mapwall.png" width="300" height="150"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="LevelSelect"/>
+    <property name="name" value="LevelSelect"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="594" name="poster" tilewidth="50" tileheight="50">
+  <image source="images/poster.png" width="450" height="1000"/>
+ </tileset>
+ <layer name="map" width="55" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztlEsKwCAMRKM3qnfpwvsfxLZQ6RAi1USriz4YdCPOw48nIt8hW0XCGdcYutdpkrtZQDcOuvHOEryfUzihW6KXDSuQvDitWwQYNTEqDeV3+94N35mWVd0uZrtJf2SPv9NK7ofzXue2ghvOV7uTFkae22wiPW5Rmb2Q2ZR6teQAUJ4wcw==
+  </data>
+ </layer>
+ <layer name="map2" width="55" height="12">
+  <data encoding="base64" compression="zlib">
+   eJyLYWBgiKEQOwOxCxXUUFsfExVwGBBHA7EhHgxTw0gihukjFegAMQuV/IfPXzBMqr8YyfATst+o4a+h6jdlIA6GslWGmd+skfw23OINhkOgeCj5TQaLO2FguOa34ey34VBORlEJRxCBI8nAlPgtdJBjcoEIEAMA7wVE3g==
+  </data>
+ </layer>
+ <layer name="map3" width="55" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxzYRi+QBuNzwrEbHjUkyJPSC2tQTQQ/wcxGCF8WSCWw6OeFHlCamkNWAbQblyAkQEe1BQBHwLy1kBsg0TTC1DDb4TiLRiIQ5DooQRMCMgPVLxRAxBKk0M53uhdlhjR0S5CaXIoA0JpchQMTgAAm7QI6A==
+  </data>
+ </layer>
+ <layer name="Calque 5" width="55" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztj8sOgjAUBQu/wJ8Jiiii4ANRQHzw/8yywbhoc2MI6SSzu530KOX4B97IuTLlbQtfqRAj3+79r21LeiuMDbtr7hPcWP5HZ0sjxZ3wtozeHg+G3Zz7Ao8C2040zngRaOmU9K5YGXZv3N+xFvhPQ6PFh/C2jt4TX4bdN/cf7IX/43BMlcBSxzcDo0YPWA==
+  </data>
+ </layer>
+ <layer name="Calque 4" width="55" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztz7cOwlAMheEwUCWmiLJQd8pC3Qks1B3I+z8FPxIsFgQc4guRONK3WHF8j+f9k3SyyEXMMzH3fiENNCPm926y46u9NORZtySTRwFFlAzvyLjo1kIbHXQN78i46DbBFDPMDe/IuOi2xQ57HG6zCqqooa74l2bPRbdH6aGPAYZGe9/qtkCAJVZGe7LbCGPFrbg54oQzwg/2/Ddds8ZG+c6y8vs05QJrbw0T
+  </data>
+ </layer>
+ <objectgroup name="objects" width="55" height="12">
+  <object gid="577" x="60" y="555">
+   <properties>
+    <property name="_the" value="HqHero"/>
+    <property name="name" value="HqHero"/>
+   </properties>
+  </object>
+  <object gid="589" x="2262" y="555"/>
+  <object gid="587" x="255" y="555"/>
+  <object gid="592" x="1002" y="554">
+   <properties>
+    <property name="_the" value="Book"/>
+    <property name="name" value="Book"/>
+   </properties>
+  </object>
+  <object gid="593" x="1554" y="384"/>
+  <object name="Door" x="2" y="127" width="36" height="431">
+   <properties>
+    <property name="_the" value="Door"/>
+    <property name="name" value="Door"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

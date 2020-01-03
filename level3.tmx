@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="121" height="91" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="hqtileset" tilewidth="50" tileheight="50">
+  <image source="images/hqtileset.png" width="1200" height="1200"/>
+ </tileset>
+ <tileset firstgid="577" name="Fond" tilewidth="50" tileheight="50">
+  <image source="images/Fond.png" width="750" height="750"/>
+ </tileset>
+ <tileset firstgid="802" name="poster" tilewidth="50" tileheight="50">
+  <image source="images/poster.png" width="450" height="2000"/>
+ </tileset>
+ <tileset firstgid="1162" name="hero" tilewidth="44" tileheight="96">
+  <image source="images/hero.png" width="220" height="960"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="hero"/>
+    <property name="name" value="Hero"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1212" name="Spawner" tilewidth="32" tileheight="32">
+  <image source="images/Spawner.png" width="64" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="ZombieSpawner"/>
+    <property name="name" value="ZombieSpawner"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="_the" value="SpawnerActivator"/>
+    <property name="name" value="SpawnerActivator"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="_the" value="BullySpawner"/>
+    <property name="name" value="BullySpawner"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="_the" value="NerdSpawner"/>
+    <property name="name" value="NerdSpawner"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1216" name="scienceMachine" tilewidth="50" tileheight="50">
+  <image source="images/scienceMachine.png" width="900" height="528"/>
+ </tileset>
+ <tileset firstgid="1396" name="teleporteur" tilewidth="50" tileheight="50">
+  <image source="images/teleporteur.png" width="200" height="550"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1440" name="scienceDoor" tilewidth="50" tileheight="300">
+  <image source="images/scienceDoor.png" width="200" height="300"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="ScienceDoor"/>
+    <property name="name" value="ScienceDoor"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Calque 1" width="121" height="91">
+  <data encoding="base64" compression="zlib">
+   eJztnWVvNUUYhl+2wZ0g/T1IcQhSHIIUhyDFIUhxCFIcghSHIOXFgxSHIMUhSHEIUhyCFL0mYZNlec7u7LK7z0l6X8n1YZL2Q3vPnHMy98zZBQtE1wwnvR1pwNGM44n3Xzs/ic2nrmMZJ5SxC7H51HU846QydiE2n7pOZJxSxi7E5lPXyYzTytiF2HzqOpVxRhm7EJtPXaczzipjF2LzqetMxjll7EJsPnWdzbjkgPdfOz+JzaeucxkHlbELsfnUNazdVO1z+RCbT10HM2qfy4fYfOqavreHOaN9Lh+K8mniM1dqmDPa5/IhZDnb8Ocsy3RNi+4J//u5hj9nWaavC6J7Bv95723yc1av93btc/mQvvc2+TnLcijRPpcXQ8m/s7B65PzZgaKzI0Vqn8uH4aT8XEBZ5rFqn8uHkaT8XEBZ5rEO67XahdGk/FxAWeaxjihjF8aS8nMBZZnHOqqMXRhPys8FlGUe65gydmEiKT8XUJZ5rOqdfJhMys8FlGUeq3onH6aS8nMBZZnHqt7Jh+lcntZec1nmsap38mEml6e111yWeazqnXyYTf7bHeQtyzxW9U4+pL1ftjvIW5Z5rOqdfEjXbpVuoW73pN7Jh/T/38Rd47J+Sr2TD736xCZU79QfhP97E/eMYzrJIb1WuxAybuKecUwnqW7Rh/RsexvmM1e36EPIuIl7xjGdpLpFHwYHmrlnHNNJqlv0IXtfpWnzmatb9KHpOy9F/ZS6RR/Ss+1tmM9c3aIP6R5jG+YzV7fow//pGMrMZ65u0Ye27r5Yc0fdog9Wl9iU+czVLfpQ9+5SHdUt+tBGp9hLdYs+tNUrWqpb9KGtXlH3nfqHtnpF3XfqH9rqFXXfqX9oq1fUfaf+oa1eUfed+oe2ekXdd+of2uoVdd+pf2irV9R9p/6hrV5R9536h7Z6Rd136h/a7BZ136k/aLNbzKtOwocmOsMqfbLonjodYT67KvNBdE9sL1iUa5X5IbonthcsejZylQ5ZdE9sL1j0bOQqHbLonthesOjZyFU6ZNE9sb1g0bORq3TIontie8GiZyNX6ZBF98T2gkXPRq7SIYvuie0Fi56NXKVDFt0T2wsWPRu5Socsuie2Fyx6NnKVDll0T2wvmF+PZd+V20vRPbG9YH49ln1Xbi9F94S959VxDVwT1zLGQ8Z6LPuu3F6K7gl7z5vgprgZbm6Mh421ms0tnQdr4zq4Lq6H6+MGuCFuhBvrtdqFsPe8I+6EO+Muxjj9rsus1jzYArfErXBr3Aa3xe1we9xBGbsQ9p73w/3xADzQGKd3DrOv39Y82BV3w91xD9wT98K9cR/cVxm7EPaej8Zj8Fg8zhiPGa/f1jw4CA/GQ/BQPAwPxyPwSDxKGbsQ9p7PwDPxLDzbGI8b69aaB8fjCXginoQn4yl4Kp6GpytjF8Le86V4GV6OVxjjCWPdWvPgHDwXz8Pz8QK8EC/Ci/ESZexC2Hu+CW/GW/BWYzxprFtrHlyJV+HVeA1ei9fh9XgD3qiMXQh7z/fh/fgAPmiMp4x1a82D23Ah3o534J14F96N9+C9ytiFsPf8ND6Dz+JzxnjaWLfWPHgIH8ZH8FF8DB/HJ/BJfEoZuxD2nt/AN/EtfNsYzxjr1poHz+ML+CK+hC/jK/gqvoavK2MXwt7zp/gZfo5fGONZY91a8+AdfBffw/fxA/wQP8KP8RNl7ELYe/4Jf8Zf8FdjPGesW2sefIlf4df4DX6L3+H3+AP+qIxdCHvPi+JiuDguYYzDz+TXrTUPfsPf8Q/8E/8KmfK7i2CCA+okXAh7lCvjKrgqrmaMw8/k1601D5bCpXEZXBaXw+VxBVwRV1LG84K/ASN2mmk=
+  </data>
+ </layer>
+ <layer name="Calque 2" width="121" height="91">
+  <data encoding="base64" compression="zlib">
+   eJzt0cFNBDEQAMEjm8uNMAiDMAiDpPhbsuwPa6ldI9XL89jZfn+8Xm8e9fScvvdGGvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gvdp3Kdxn8Z9Gv/v/zn9/RrfQeM+jfs07tO4T+M+jfs07tO4T+M+jfs07tO4T+M+jfs07tO4T+M+jfs07tO4T+M+jfs07tO4T+M+jfs07tO4T+M+jfs07tO4T+M+jfs07tO4T+M+jftm87nZbLU3vp++90az+dpsvNob30/fe6PZfG82Xu2N76fvvdFsfjYbr/bG99P33mg2v5uNV3vj++l7b/T0/AHC91I4
+  </data>
+ </layer>
+ <layer name="Calque 6" width="121" height="91">
+  <data encoding="base64" compression="zlib">
+   eJzt0WdbjgEAhuEn3ldGVEbZRchMWWVVtmSFsrOJJPQHs0LJKjKzIpRI2SOXP9DXng/XeRzXD7iPOwgkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSQqC6kgQXKCLdIku0xWqoat0ja5TLdXRDaqnm3SLbtOdSF+vUG/u8k8DNdI9uk9N9IAe0iN6TE/oKTXTM3pOL+glvfLjUGvhn9f0hlrpLb2j99RG7fSBOugjfaJO+kxd1E1f/DjUvvLPN/pOP+gn/aLf9If+Us//D6NBEEP9qD9FKEoDKDba1yvUm4H8M4gG0xCKo6E0jOIpgRJpOI2gkTSKkiiZRtMYPw61sfwzjsbTBJpIKZRKk2gypdEUmkrTKJ2m0wyaSbP8ONRm888cyqC5lElZNI/m0wJaSIsom3JoMS2hpbSMlvtxqOXyTx7l0wpaSatoNa2htbSO1lMBbaBC2kibaDNt8eNQ28o/RbSNttMOKqYS2km7aDftob20j/ZTKR2gg3TIj0PtMP8coaN0jI7TCSqjk3SKyuk0VdAZqqSzdI7OU5UfS5IkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSaHyD2u4VTM=
+  </data>
+ </layer>
+ <layer name="map" width="121" height="91">
+  <data encoding="base64" compression="zlib">
+   eJztnQtu1DAQQDdnKEt7BWCpeoTS7iUoQnAF1FtyCM5CIq3V1JvEv/HEmbwnjVShKh+/2OPYE/rcHQ5fIuLcx00fz5G/T8y3ozafIs95ujiO/f1WODV2zScci4NjHGuDY3lwPH//t/2/343iBccitOTYh34sA47lwTGOtcGxPDjGsTY4lgfHONYGx/LgGMfa4FgeHONYGxzLg2Mca4NjeXCMY21wLA+O7TtuDRzbB8f2wbF9cGwfHNtnC46/9fGZyI6nDTgmykObVMda3y2eO/2217g3vlu8Pl/NdvefI41720I+1nQ8+P1Q8XxHzzOO9R1rtbl1x7Hz5KeFdhi+f3tIjN99/Lr8/HHimDiWIyXfnQXbIeQQx3Kk3NeQv14v/fpr4bXOOXRjwguOxUi9r/FaSIln+rEeuY6d51Aen3sOhuN8Jx+rkDqH+pGQv4f4mekQx3KstcdAPtZjGC/vZvpaDe67t3cx+rEOmv34vnt7z74hH6uRulfoz6FuFzyN8f2G2hTHcqTuv8zNoXzcmOyvk4Uck4/lmXJceq9TfTb1PPRjOaQdx/rNzcc5a+MPgfPg+Bp/HA6NyXvux4/d+2hlT2Jpz3boR+N1kJJ6jT3k4xYcl97XscB1qB+XromH8POKtGPfb6uO3bgcamu/pkLCceyaeEmNpORc02cLjsfPeUyfcn06Nl77+NOF50JaoVFX3Ert7Xi90W8DybFzal7l8nHq3seW6j+18ds49O4j6bmFb4PXGC+0GbexP2eee+6lPONYh7XqQNyxXA6sOX8OXYNr+73X0Dti6kBifWmvMbVwDVvYd1rK1a4fxNa9+8+LVF8ev6ukXINVx5Lj05TblHXP2u8uU8/QHhzXvq+lOY10/jsHjjm1L4rjMkLvYdLnzpmn4zifmD1Ga45j8782NRxL1AjkMH4Xy5lDllxP7DxvC/Pq0rl3bcclaxNW16vX+nvGkt/HOdw3y6xXv6e1GnrtY7KWWY+c3BkzDuL4mrUcp+41l6zDLIFj++DYPji2D47tg2P74Ng+OLYPjtcnpaYjhz043vv/R53yDd5WHa+1J5Faw2EltlCXWYsWaq01sFIjkAOO69FKu+K4Hq20614cH3EMFWilXXFcj1baFcd1+Htop11xXAcc2wfH9sGxfXBsn8FxK/tOw/5PK9dSM4ZvoP8ddOM/J250cg==
+  </data>
+ </layer>
+ <objectgroup name="spawn" width="121" height="91">
+  <object gid="1215" x="400" y="800">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1215" x="50" y="850">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1215" x="400" y="950">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1215" x="50" y="1100">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1215" x="400" y="1150">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1215" x="50" y="1400">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1215" x="400" y="1500">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1212" x="3050" y="4400">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1214" x="3000" y="4400">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1214" x="2953" y="4339">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1215" x="3000" y="4100">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2800" y="3950">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1212" x="3100" y="4400">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1212" x="3000" y="4300">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1212" x="2900" y="4400">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1215" x="200" y="4000">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1212" x="150" y="4400">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1215" x="300" y="4000">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1212" x="250" y="4400">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1212" x="350" y="4400">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1212" x="200" y="4350">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1212" x="309" y="4347">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1212" x="100" y="4350">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1212" x="50" y="4400">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1150" y="3400">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1200" y="3400">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1250" y="3400">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1550" y="3700">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1214" x="1654" y="3698">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1952" y="3696">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1214" x="1800" y="3700">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1900" y="3650">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="2000" y="3650">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1214" x="1750" y="3700">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1214" x="1700" y="3700">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1700" y="3650">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="3000" y="3450">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="2850" y="3350">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1212" x="3100" y="3350">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1214" x="3450" y="3050">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="1214" x="3500" y="3050">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="1214" x="3600" y="3050">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="1214" x="3550" y="3050">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2300" y="1650">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2450" y="1650">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2600" y="1650">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2750" y="1650">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2900" y="1650">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2800" y="1700">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2600" y="1700">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2350" y="1700">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1215" x="800" y="2700">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1215" x="850" y="2650">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1215" x="750" y="2550">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1214" x="1450" y="2850">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1350" y="2750">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1400" y="2750">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1450" y="2750">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1212" x="350" y="2400">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="400" y="2400">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="450" y="2400">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="400" y="2350">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="450" y="2350">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="490" y="2326">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="434" y="2340">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="434" y="2340">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="434" y="2340">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="414" y="2418">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="360" y="2302">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="452" y="2394">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="368" y="2386">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="390" y="2324">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="506" y="2326">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="484" y="2428">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="432" y="2444">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="396" y="2436">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="370" y="2308">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="366" y="2438">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="380" y="2450">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="500" y="2446">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="420" y="2296">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="410" y="2346">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="380" y="2350">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1212" x="360" y="2310">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1144" y="2082">
+   <properties>
+    <property name="id" value="11"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1100" y="2150">
+   <properties>
+    <property name="id" value="11"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1150" y="2150">
+   <properties>
+    <property name="id" value="11"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1100" y="2100">
+   <properties>
+    <property name="id" value="11"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1166" y="2076">
+   <properties>
+    <property name="id" value="11"/>
+   </properties>
+  </object>
+  <object gid="1215" x="1450" y="1950">
+   <properties>
+    <property name="id" value="10"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1150" y="1600">
+   <properties>
+    <property name="id" value="12"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1088" y="1646">
+   <properties>
+    <property name="id" value="12"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1150" y="1650">
+   <properties>
+    <property name="id" value="12"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1050" y="1650">
+   <properties>
+    <property name="id" value="12"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1000" y="1650">
+   <properties>
+    <property name="id" value="12"/>
+   </properties>
+  </object>
+  <object gid="1212" x="1200" y="1650">
+   <properties>
+    <property name="id" value="12"/>
+   </properties>
+  </object>
+  <object gid="1215" x="250" y="2050">
+   <properties>
+    <property name="id" value="10"/>
+   </properties>
+  </object>
+  <object gid="1215" x="208" y="2077">
+   <properties>
+    <property name="id" value="10"/>
+   </properties>
+  </object>
+  <object gid="1212" x="2600" y="2800">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1214" x="2600" y="2750">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2900" y="2750">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1212" x="2650" y="2800">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1212" x="2700" y="2800">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1212" x="2550" y="2800">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1214" x="2650" y="2750">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1214" x="2628" y="2716">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2900" y="2800">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2947" y="2773">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+  <object gid="1215" x="2944" y="2728">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Calque 3" width="121" height="91">
+  <data encoding="base64" compression="zlib">
+   eJzt2DtKA1EUBuB7axVXo41uQRsF3YWuwkehrWjho9BORXvt1BXoArIHFVJ5QqYY4iTIRZJJ+D744ZxTDfzMFJMSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANAGWzml/chB5DD39+1q7oXptxM9XkQuI1e5v+9W85WOYailyHLhjemwFlkvvAEAALTBdU7pJpfvtN9T9PWcy3fa7z36+sjlO+13FH0d5/IdAAAAgPH5jHyNyPfkHo1/spBTekvDs+jf3EzodbkSWa3much8NTMbel1uRDbT7/eYydmLb2inmk8jZw33+jxK0zf6JJV13KnlNnI3cOPvzqO/bjU/RB4b7vV5lKaO71NZx91aXiKvAzcYhx+7Glt5
+  </data>
+ </layer>
+ <layer name="Calque 4" width="121" height="91">
+  <data encoding="base64" compression="zlib">
+   eJztnNdrFEEAxu9c9D+wvCgYo3nQRB9ssStYEBSiSfDF8qxRI3axixoLdrH3hl0sib2hYEFNVOxiz5+hfgtZmGxmdmdv925Lvh/8kpnNZO92v8zO3GzuUilCSFKoM1Kp10bYz4Jkk0/I9zMzTjS/kO9vZkwIIYQQQgghhBBCCCGEEEIIISSh/DO/pMN+FoQQQkjuaQ3bwLawXYBtSXQohEWwO+wRYFsSHYbDEXAkHAWrMa+tsc1tr6N+I920LYkHE+EkOBlOgS+R5StbxrWo16WbtiWEEEIIIXoUCPOrtShXwXWCExTrx1eNVOoa33MVCwYLGR5C+TA8IlipyPgO8r0L1/MeQuI5yowjjdgHM+2PN5lxpBH7IPtjMhH7IPsjIc0DzqHDJYj5kxscs8MlF/MnjtnhwvkTIc2H0RFYY+6Sdq4TNZ2RXxdY4JDj+IAzzmR+NyjtXCdqipBfd9jDQ45tW6RS7Vpk/pica+eWPsi2LyzO4fVYZ3731EPd/jPSmCHIdigcFoExV4bbOMxxOf64jcMclwkhhDQn+P92ycf6f7ugEdfQdMo6vEH7t/x7lFLvc45qrV95WccS19B0yjp8QfuvzFjKX58ZW+tXYa9j/UG+9S4Zt4StPGz3up+kYq1fxeE+ZXvYwcN2r/sh0eA6+voNQ12PO5dxLFcM/XoSeYDje2io63HnFo7ltqFfDwLZ2KW7LRPauNwbe4bje26o63HnEY7lsaFfDwJr7HqB/b40Gm+TtTN5hXa1GT6PIknGuzV+T6cNceYdMnuvmdsHtPsY4N/apYDaEGe+IbPvmrn9QLufCbp+EpIL7PMdt3qYZHO+lmTscyC3epi4zdcIIdmhpGGd02kMKInBWihRY+XnNAYw4/hSgezGwVKHDFVt8vD6qRPM5+uoSGP2T0uvbboi226wkBn7YkPaX90NM7c8jYw7Str0RLa9YG9m7IvjaX91N8zc+mlkXCxpMxDZDoKDmbEvsp1xWcNYO97h93TakMzJdsYmOnNmzqsJIUSOeX201prsZbGuQmwfNrxXIcfMxlprspfFugqxfdjwXoUcKxv7OpPbmoVqP0lhKl6rTYMVcDqcAWfCSjgrZq/jSmyZ2ute95MUZiPHOXAunAfnwwVwIVyUgIytPu22xizbT1JYjByXwKVwGVwOV8CVcFVEMzZzK7dZKum3ZUK+XtYkkpbxauS4Bq6FVXCd+Tn6cAPcGNGMZRlYeZY3ZKm6bme6/zizCTluhlvgVrgNboc74M4YZWzfbpXFvmzv+/brgNv+danGeauRnDvV9myzC4+5G+6Be+E+uB8egAdjkLF43R7nUJZlrMrVb8b3cN7uS86danu2OYzHPAKPwmPwODwBT8JTEc+4Qhhj3cplkjmXKle/GT/BeXsqOXeq7dnmNB7zDDwLz8Hz8AK8CC9FPOOOQhZ5QjlfKHcWyp0kGVekG/d7ce4WJr1gb0k5E5w+/yuq75mxMigWnns/oTxAKA8Uyv1txyrO08TvUbgnOAaOlZRNqj3uy+nzv/ieGZIr/gMhp+Cy
+  </data>
+ </layer>
+ <objectgroup name="objects" width="121" height="91">
+  <object gid="1162" x="5700" y="4500">
+   <properties>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+  <object gid="1396" x="1870" y="4499">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="color" value="0"/>
+    <property name="id" value="1"/>
+    <property name="idTarget" value="2"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </object>
+  <object gid="1400" x="79" y="4499">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="color" value="1"/>
+    <property name="id" value="3"/>
+    <property name="idTarget" value="4"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </object>
+  <object gid="1396" x="1569" y="4499">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="color" value="0"/>
+    <property name="id" value="2"/>
+    <property name="idTarget" value="1"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </object>
+  <object gid="1400" x="141" y="3799">
+   <properties>
+    <property name="_the" value="Teleporter"/>
+    <property name="color" value="1"/>
+    <property name="id" value="4"/>
+    <property name="idTarget" value="3"/>
+    <property name="name" value="Teleporter"/>
+   </properties>
+  </object>
+  <object gid="1404" x="525" y="4499">
+   <properties>
+    <property name="color" value="2"/>
+    <property name="id" value="5"/>
+    <property name="idTarget" value="6"/>
+   </properties>
+  </object>
+  <object gid="1404" x="446" y="249">
+   <properties>
+    <property name="color" value="2"/>
+    <property name="id" value="6"/>
+    <property name="idTarget" value="6"/>
+   </properties>
+  </object>
+  <object gid="1404" x="338" y="1700">
+   <properties>
+    <property name="color" value="2"/>
+    <property name="id" value="7"/>
+    <property name="idTarget" value="5"/>
+   </properties>
+  </object>
+  <object gid="1408" x="3069" y="3800">
+   <properties>
+    <property name="color" value="3"/>
+    <property name="id" value="8"/>
+    <property name="idTarget" value="9"/>
+   </properties>
+  </object>
+  <object gid="1408" x="1639" y="3299">
+   <properties>
+    <property name="color" value="3"/>
+    <property name="id" value="9"/>
+    <property name="idTarget" value="8"/>
+   </properties>
+  </object>
+  <object gid="1412" x="1914" y="3299">
+   <properties>
+    <property name="color" value="4"/>
+    <property name="id" value="10"/>
+    <property name="idTarget" value="11"/>
+   </properties>
+  </object>
+  <object gid="1412" x="4445" y="3149">
+   <properties>
+    <property name="color" value="4"/>
+    <property name="id" value="11"/>
+    <property name="idTarget" value="10"/>
+   </properties>
+  </object>
+  <object gid="1416" x="2156" y="3300">
+   <properties>
+    <property name="color" value="5"/>
+    <property name="id" value="12"/>
+    <property name="idTarget" value="13"/>
+   </properties>
+  </object>
+  <object gid="1416" x="113" y="3149">
+   <properties>
+    <property name="color" value="5"/>
+    <property name="id" value="13"/>
+    <property name="idTarget" value="12"/>
+   </properties>
+  </object>
+  <object gid="1420" x="2371" y="3300">
+   <properties>
+    <property name="color" value="6"/>
+    <property name="id" value="14"/>
+    <property name="idTarget" value="15"/>
+   </properties>
+  </object>
+  <object gid="1424" x="2468" y="3299">
+   <properties>
+    <property name="color" value="7"/>
+    <property name="id" value="15"/>
+    <property name="idTarget" value="14"/>
+   </properties>
+  </object>
+  <object gid="1428" x="2677" y="3099">
+   <properties>
+    <property name="color" value="8"/>
+    <property name="id" value="16"/>
+    <property name="idTarget" value="17"/>
+   </properties>
+  </object>
+  <object gid="1432" x="4513" y="2349">
+   <properties>
+    <property name="color" value="8"/>
+    <property name="id" value="17"/>
+    <property name="idTarget" value="16"/>
+   </properties>
+  </object>
+  <object gid="1436" x="3423" y="2550">
+   <properties>
+    <property name="color" value="9"/>
+    <property name="id" value="18"/>
+    <property name="idTarget" value="19"/>
+   </properties>
+  </object>
+  <object gid="1432" x="2290" y="2499">
+   <properties>
+    <property name="color" value="9"/>
+    <property name="id" value="19"/>
+    <property name="idTarget" value="18"/>
+   </properties>
+  </object>
+  <object gid="1436" x="2502" y="2498">
+   <properties>
+    <property name="color" value="10"/>
+    <property name="id" value="24"/>
+    <property name="idTarget" value="28"/>
+   </properties>
+  </object>
+  <object gid="1436" x="2867" y="2499">
+   <properties>
+    <property name="color" value="10"/>
+    <property name="id" value="26"/>
+    <property name="idTarget" value="17"/>
+   </properties>
+  </object>
+  <object gid="1436" x="2687" y="2500">
+   <properties>
+    <property name="color" value="10"/>
+    <property name="id" value="25"/>
+    <property name="idTarget" value="27"/>
+   </properties>
+  </object>
+  <object gid="1436" x="2368" y="2299">
+   <properties>
+    <property name="color" value="10"/>
+    <property name="id" value="28"/>
+    <property name="idTarget" value="23"/>
+   </properties>
+  </object>
+  <object gid="1436" x="2595" y="2299">
+   <properties>
+    <property name="color" value="10"/>
+    <property name="id" value="29"/>
+    <property name="idTarget" value="25"/>
+   </properties>
+  </object>
+  <object gid="1436" x="2812" y="2300">
+   <properties>
+    <property name="color" value="10"/>
+    <property name="id" value="23"/>
+    <property name="idTarget" value="1"/>
+   </properties>
+  </object>
+  <object gid="1436" x="828" y="1399">
+   <properties>
+    <property name="color" value="11"/>
+    <property name="id" value="27"/>
+    <property name="idTarget" value="25"/>
+   </properties>
+  </object>
+  <object name="Wall" x="5996" y="4181" width="43" height="325">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1761" y="3891" width="40" height="624">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1698" y="3890" width="40" height="624">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="12" y="3896" width="40" height="624">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="11" y="3236" width="40" height="624">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3196" y="3240" width="40" height="624">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1561" y="2976" width="40" height="392">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="2545" y="2976" width="42" height="348">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3197" y="2539" width="40" height="624">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1547" y="2582" width="104" height="330">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1899" y="2448" width="23" height="168">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1897" y="2235" width="20" height="178">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1578" y="2342" width="23" height="216">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1578" y="2141" width="23" height="168">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1897" y="2040" width="23" height="168">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1579" y="1939" width="23" height="168">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1897" y="1842" width="23" height="168">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1578" y="1744" width="23" height="168">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1897" y="1539" width="26" height="267">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1729" y="2750" width="23" height="168">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3198" y="1634" width="49" height="822">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1953" y="1633" width="49" height="822">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3353" y="1731" width="49" height="822">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="4595" y="1608" width="49" height="822">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="4398" y="2352" width="30" height="98">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="4347" y="2452" width="30" height="98">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="4598" y="2794" width="32" height="362">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3369" y="2789" width="32" height="362">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="495" y="37" width="157" height="1761">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="4598" y="46" width="30" height="1362">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="20" y="36" width="31" height="1708">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="20" y="1796" width="32" height="362">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="597" y="1845" width="24" height="109">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1077" y="2801" width="24" height="94">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1197" y="2902" width="24" height="109">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="597" y="2745" width="24" height="109">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="26" y="2940" width="25" height="220">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="29" y="2440" width="23" height="420">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="272" y="2245" width="30" height="201">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1498" y="1742" width="15" height="315">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Event" x="2569" y="1090" width="196" height="292">
+   <properties>
+    <property name="_the" value="Event"/>
+    <property name="id" value="1"/>
+    <property name="name" value="Event"/>
+   </properties>
+  </object>
+  <object name="TimerSpawn" x="2420" y="634" width="124" height="128">
+   <properties>
+    <property name="_the" value="TimerSpawn"/>
+    <property name="monster" value="z"/>
+    <property name="name" value="TimerSpawn"/>
+   </properties>
+  </object>
+  <object name="TimerSpawn" x="1522" y="646" width="124" height="128">
+   <properties>
+    <property name="_the" value="TimerSpawn"/>
+    <property name="monster" value="z"/>
+    <property name="name" value="TimerSpawn"/>
+   </properties>
+  </object>
+  <object name="TimerSpawn" x="2118" y="634" width="124" height="128">
+   <properties>
+    <property name="_the" value="TimerSpawn"/>
+    <property name="monster" value="b"/>
+    <property name="name" value="TimerSpawn"/>
+   </properties>
+  </object>
+  <object name="TimerSpawn" x="1826" y="638" width="124" height="128">
+   <properties>
+    <property name="_the" value="TimerSpawn"/>
+    <property name="monster" value="n"/>
+    <property name="name" value="TimerSpawn"/>
+   </properties>
+  </object>
+  <object name="Wall" x="2796" y="828" width="26" height="267">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="2876" y="825" width="26" height="267">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object gid="1440" x="2800" y="1400"/>
+  <object name="CutsceneTransfert2" x="3070" y="878" width="460" height="501">
+   <properties>
+    <property name="_the" value="CutsceneTransfert2"/>
+    <property name="name" value="CutsceneTransfert2"/>
+    <property name="nbr" value="2"/>
+   </properties>
+  </object>
+  <object gid="1213" x="250" y="300">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1213" x="200" y="300">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1213" x="150" y="300">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1213" x="100" y="300">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1213" x="50" y="300">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="1213" x="3800" y="4450">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1213" x="3800" y="4350">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="1213" x="1350" y="4450">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1213" x="1350" y="4350">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="1213" x="450" y="3750">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1213" x="450" y="3650">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="1213" x="4150" y="3000">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="1213" x="4150" y="2900">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="1213" x="2200" y="2450">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1213" x="2300" y="2400">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1213" x="2400" y="2450">
+   <properties>
+    <property name="id" value="20"/>
+   </properties>
+  </object>
+  <object gid="1213" x="250" y="3100">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1213" x="250" y="3050">
+   <properties>
+    <property name="id" value="8"/>
+   </properties>
+  </object>
+  <object gid="1213" x="250" y="2812">
+   <properties>
+    <property name="id" value="9"/>
+   </properties>
+  </object>
+  <object gid="1213" x="694" y="2300">
+   <properties>
+    <property name="id" value="10"/>
+   </properties>
+  </object>
+  <object gid="1213" x="400" y="2100">
+   <properties>
+    <property name="id" value="11"/>
+   </properties>
+  </object>
+  <object gid="1213" x="1326" y="2050">
+   <properties>
+    <property name="id" value="12"/>
+   </properties>
+  </object>
+  <object gid="1213" x="400" y="2050">
+   <properties>
+    <property name="id" value="11"/>
+   </properties>
+  </object>
+  <object gid="1213" x="1736" y="2608">
+   <properties>
+    <property name="id" value="13"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

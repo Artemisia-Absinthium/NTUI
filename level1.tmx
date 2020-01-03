@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="160" height="36" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="hqtileset" tilewidth="50" tileheight="50">
+  <image source="images/hqtileset.png" width="1200" height="1200"/>
+  <tile id="106">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="solid" value="false"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="577" name="hero" tilewidth="44" tileheight="96">
+  <image source="images/hero.png" width="220" height="960"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="hero"/>
+    <property name="name" value="Hero"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="627" name="Fond" tilewidth="50" tileheight="50">
+  <image source="images/Fond.png" width="750" height="750"/>
+ </tileset>
+ <tileset firstgid="852" name="Spawner" tilewidth="32" tileheight="32">
+  <image source="images/Spawner.png" width="64" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="ZombieSpawner"/>
+    <property name="name" value="ZombieSpawner"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="_the" value="SpawnerActivator"/>
+    <property name="name" value="SpawnerActivator"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="_the" value="BullySpawner"/>
+    <property name="name" value="BullySpawner"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="_the" value="NerdSpawner"/>
+    <property name="name" value="NerdSpawner"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="856" name="Squelette" tilewidth="50" tileheight="50">
+  <image source="images/Squelette.png" width="100" height="50"/>
+ </tileset>
+ <tileset firstgid="858" name="poster" tilewidth="50" tileheight="50">
+  <image source="images/poster.png" width="450" height="2000"/>
+ </tileset>
+ <layer name="Calque 1" width="160" height="36">
+  <properties>
+   <property name="" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2Pez1UQYxvFjYu9gRSwggmJX7A2kKYKo+Kdg72ABu2BvFBtKEaWjYkfFCvYK9l5p9vLdyWTY2Xn3HpOczcnlvD985mbeuZPNbnKed2dHRbXaKMFwnIbTcQbOxFme/12bXIALcRFGVOB5WtVIXIxLcCkuq8AzNZJvblfjGlyL6yrwnK1qDMbietyAG3FTk55lRG2NRt3TnVtavwN3YhzG17lHvd+o6Rdn4xyci/NwfpRkbLPfb1VI62PqEzARd+Fu3IN7C45VtKc38vtz55bWp2AqpuHBOvf4P7/R0bgcV+BKXBUlGdvs914V0vqY+nQ8hIcxAzMxq+BY9fIi8nxfIfLPnVtafwSP4jEsqHOPer9R8y3ejFtwK27D7VGSsc1+71UhrY+pP44n8CSewtN4puBYVerp7tzS+iK8iJfwcp171PuNmm/xPkzC/XgAk6MkY5v93qtCWh9TfwWv4jUsxhK8XnCsED09L3duaf1dvIf38YFV92V3W3luvsXZmIO5mIf5UZKxzX7vVSGtj6l/iI+wFMvwMT4pOFaInp6XO7e0/hW+xjf41qr7srutPDf94lksxHN4Hi9EScY2+71XhbQ+pv4dvscP+BE/4eeCY4Xo6Xm5c0vrq/ErfsPvVt2X3W3luekXb+BNvIW38U6UZGzW511bz8Kk9TH1P/An/sLf+Af/FhwrRE/Py51bWl8vrtXWxwbYMF5Tt7Nb2jNLeW76xaf4DJ/jC3wZJRmb9Xl950VlGu5oxD2l9TH1jVj7jbEJNsVm2DwuNlaInp6XO7e0vjXX22BbbGfV7eyW9sxSnpt+8QuWYwVWYlWUZGzW5/WdF5VppKMR95TWx9S3Z+07YQd0xo7YqeD3F6Kn5+XOLa1343o3dEcPq25nt7RnlvLc9Isa91gHEWKsGycZm/V5fedFZRrjaMQ9pfUx9d35uwd6Yk/shb0Lfn8henpe7tzS+oFc98JBONiq29kt7ZmlPDf9YgtsiQ7oiK3iJGOzPq/vvKhMExyNuKe0PqZ+CH8PxWE4HEfgyILfX4ienpc7t7R+LNd90Q/9rbqd3dKeWcpz0y92xi7ogq7YNU4yNuvz+s6LyjTd0Yh7Sutj6gP4OxDH4XgMwgkFv5UQPT0vd25p/WSuT8EwnGrV7eyW9sxSnpt+sQ/2xX7YHwfEScZmfV7feVF7J61PqLFC9PSy2Nkt7ZmlPDf94igcjWPQG33iJGOzju87L2rvpPUJNVaInl4WO7ulPbOU56ZfDMYQnIihOClOMjbr+L7zovZOWp9QY4Xo6WWxs1vaM4fOc995kWoNdnZLe+bQee47L1Ktwc5uac8cOs9950Wq9ZS5Z075zotU6ylzz5zynRcppZRSSimllFJKKaWUUkoppZRSSimlmuc/pzkJzA==
+  </data>
+ </layer>
+ <layer name="calque 2" width="160" height="36">
+  <properties>
+   <property name="" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmTtOw0AURQeyAOrQwgpYBrvgq0RZAV+JhiqtoUCiSJmGIh0bQCJiC3QsgAJoGUu2NH6asefnvJnkjnTkTCyP7OfDfXaYCiGmHjw4YlqnYGDb85pjM2OEo+46fGtXHjuSjJW12uZt7m0zwO1eyVxyuGLmBnaZCPGvzrbCYq4eWw8O71LzLxVy9M83Z+sRy6UzyTn57kRy2nIMt3vwL9w/3/5bj1j+3UhuyXdXkuuWY7jd2yT/ioHsg4M8+++dAfTffPxLrf+qa5j8smEWALd708DzVylrobrkW5/c/AvtvzbH9TEPee+PCT03m8+moXOwLQ9U7+g8F/98+y/NUJd1YsxLviQfAdcfyz/13Gw+00F7go9/3JS1+JH8Gvgz1C5G/0X++eef7pmE+kf7tO1zjWv/1l2f67FvBna2umvn0n9TyD9u92Lkn4t/fT9fh/g3EU3/9iT7yvy+2j8R5trZ9t9JVTvkn3/+1TXs8qe+1lW834X4txDt+fdc7V+IZu18+q9uDeSfW/49VVuTN68t+1bpoI9/avY9VluTOzRXjiTHylzXf01rjBRoVo0s9o8t97c9D6SUf2otaf4tqm0sx7gzcCn0+fcimv4tRbN2NFcuJJfKXNd/TWtQCs06sfan5J8p59Ra0vxbVtuU/PN1L3R8RlhDN1z+7nLApy913S/6PmI7ynX6ykBXvkG2hN57+Ac4/bN1EP6BvvyzcRD+gXX1z/V3PJAW8A+k7t7QEfgHYjno6h78AzHcK73xcQ/+5YsIuOdc1H7h+W894PbJNePUvJyR7/t2D/7pCeldqeOScfCPz78DT7j96oLLM/gH/7ie8eDfZvvH7Rj8c/fvvSIX/zj/hwH/+vPP1UHkG/zbNP+GAfefG+57DQAAAGwi/7G38pQ=
+  </data>
+ </layer>
+ <layer name="balcons" width="160" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztztERQEAQBcGLGlEgiiMxeXhZLLXdVfM/YwDwVUta01Y9Qkt7OtJZPUJLM13prh4BgJ97qgcAAAAAAAAAAAAAAAAAAAAAAKCxF/G+Be0=
+  </data>
+ </layer>
+ <layer name="map" width="160" height="36">
+  <properties>
+   <property name="solid" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztnEtOwzAURd0xDKCrBAkJFgGCDZSVwAqYVbABvkasgM+giAm2Wgvj2o2dvLznpPdIV0oITW1z+qK4DkrJMRN87+MKMhMOUOrbZH/Cm72JdK+XTJn7XVsWPY/vqcnZhuM1uQD4eZVuANhq4B+QhNq/K5Nr4nOC8SJd/24Ec1JBqPryGYzrg8lji/NwI+WfvS85EnrvMeHmUS7UuoNNf9vYfAy3h139w/VWFn/uatfk3jvWxr/Qw75zbjJv3fvxMVd/4+Fv14recMz553uVO9e6UDTz1e51ByaHif3ax5gbOx4/q9jtN9nmbERvOBb6Z93LnWudJhwsxb3ucpXYPqV/tyZ3hOeTIOZfrQ7qYP9L/b+2OUrcc1h/Uf/4ca45B2t1z6K9bXvPu0P4fWOsBpbCXf/GgKt3fg1027Whez5/WANL4ah/Y/PX1bu5l231L6yBpTTVP5vnSJ4SP4/lpeB3EdrYeT+qOesUfg3sow9guHRZ+xebs47h+/feQ8Bw6br+NMdB+AdSUKyBbnIQ/oEUFP41OQj/QAwq95ochH8gRa5bud/7hmsYLPAPpMh1r8szNqF/Hwr+gSV9u2dB/RsWEs+TtnnO1F+r0LRGD/4NA4p6w4F1z/cqN/CPh7Y1bMzuwT8+tHQDeqKLe/CPDy3dgB7o6h7840NLN4AYCvfgHx9augGFNN3LUrgH//jQ0g0ogKq2SQWso6UbkMnQ3YN/7ZH6vyHhdRXwg88dkKSGawK8puEXQVnHfQ==
+  </data>
+ </layer>
+ <layer name="Calque 3" width="160" height="36">
+  <properties>
+   <property name="" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2stKw0AUxvGBvKS+ggv1CbxUxXhFbUHrBXXtdeULiIIPoWjBF9BdV36LCKHUTKwdT5L5/+AjnWYyOWUOWYQ6F59X6wIyb9YFAKiMJ8+46Lth1w6bW0W+OkP+jrJrl9kb33V12Q+M31zi3LyyoCwqrcS6ourrZblSrnPjnmVRAR14xoP2f7H2qvotVdaUdWUjKXePmPWzPCiPuXHfsqiAbj3jb+fZ8SbAPQELnyNc815wbmrEc4hTmh2L+nBm4DhbMLeV+3yqnP1wLlbT1gVUVOqfAgAAgJrYSZzbVfaUttLhHTT+UVf9dqgcKcfKCf1X6K5m62I8XgLNBax9BF7/OfD6CCN0XzSVRb+zVzZ4tgEAAABAM/GeHgAAoBkmEucm+e9LbSxpr5aVFfYMBjbVd1vKNv0HIEJtpWNdBKJ1oVxaF4Fo3HsCAMBffAGcBEiG
+  </data>
+ </layer>
+ <layer name="Calque 4" width="160" height="36">
+  <properties>
+   <property name="" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2i1OBEEQBtA2yy2WCyJAAR4PSJYDAJIfA2fAwBVISOAKqyixoncFS3cmFMy8l3yZTn+mRIkRXQoAAPwNF433Y/YWWUQusweZkNvG+zFbRu4i99mDQJL3jS/8poON737WIADwz8wiOx0dDGEe2e3oAAAAAABgCHvZAzBpJ9kDMGkP2QMwac/ZAwCj8Rh5Wp1nZf2tU92VLR30eIm8rs7zsv7Wqe7Klg56fLdHvR38VL1Hh5GjyHFjB73qPTqNnEXOGzvoVe/RVeQ6ctPYQS//f2T6iHwO3AEA9PgCNyM+6A==
+  </data>
+ </layer>
+ <layer name="Calque 8" width="160" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt2zlKBFEUBdDvr0o01FB36DJaXYDakZHDAtQGU1tTwWEfDpFD6Cvo7CciNE/Kc+AGD5riBjeqpkoBACDba1fKW5fdgv/qM7b3ZX9k6UtZ6bNLAACQbVJL2YnsRvZqe8My7cfGDiKHkWlt78F2bkVG7Dg2dhI5jZzV9h5McisyYuexsYvIZWRW23twlFuREbuOjc0jN5Hb2t6DWW5FRuw+NvYQeYw81fYe3C1+e/WD502XVRTgF567Ul7890uS99jeh/0BAAAAf5T3+QB5VvtS1nw7RJL12N6G/ZFkM7a3ZX8AAAAALHwDO4AtYA==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="160" height="36">
+  <object gid="577" x="354" y="749">
+   <properties>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+  <object name="Wall" x="10" y="427" width="43" height="325">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="1547" y="-1" width="49" height="139">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3397" y="485" width="50" height="266">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="5897" y="348" width="49" height="205">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="5553" y="440" width="48" height="317">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="6796" y="743" width="45" height="467">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="BossTransfert" x="3501" y="1665" width="397" height="140">
+   <properties>
+    <property name="_the" value="BossTransfert"/>
+    <property name="cutscene" value="nil"/>
+    <property name="map" value="level1_boss.lua"/>
+    <property name="name" value="BossTransfert"/>
+   </properties>
+  </object>
+  <object name="Wall" x="6745" y="646" width="40" height="101">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="6696" y="546" width="40" height="101">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object gid="853" x="1630" y="728">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1630" y="728">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1632" y="681">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1634" y="631">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1636" y="587">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1638" y="541">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1637" y="489">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1643" y="443">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="853" x="1862" y="272">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="853" x="5052" y="288">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="853" x="7352" y="378">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="853" x="7352" y="378">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="853" x="7352" y="378">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="853" x="5698" y="582">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="853" x="6486" y="1168">
+   <properties>
+    <property name="id" value="6"/>
+   </properties>
+  </object>
+  <object gid="853" x="4804" y="1606">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="853" x="4806" y="1516">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="853" x="4808" y="1438">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="853" x="4808" y="1354">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object name="Sign" x="29" y="603" width="96" height="149">
+   <properties>
+    <property name="_the" value="Sign"/>
+    <property name="ang" value="Hum... a wall... pretty sure it was not here before !"/>
+    <property name="fr" value="Hum... un mur... je suis sur qu'il n'était pas là avant !"/>
+    <property name="name" value="Sign"/>
+   </properties>
+  </object>
+  <object name="Sign" x="2027" y="156" width="200" height="144">
+   <properties>
+    <property name="_the" value="Sign"/>
+    <property name="ang" value="What ?! The reception is on the second floor ?"/>
+    <property name="fr" value="Quoi ?! L'accueil est au deuxième étage !"/>
+    <property name="name" value="Sign"/>
+   </properties>
+  </object>
+  <object name="Sign" x="2448" y="147" width="368" height="145">
+   <properties>
+    <property name="_the" value="Sign"/>
+    <property name="ang" value="The Lords of this place seem to me slightly narcissistic."/>
+    <property name="fr" value="Les seigneurs de ces lieux me semblent légèrement narcissiques."/>
+    <property name="name" value="Sign"/>
+   </properties>
+  </object>
+  <object name="Sign" x="6696" y="994" width="56" height="206">
+   <properties>
+    <property name="_the" value="Sign"/>
+    <property name="ang" value="Did they steal the streetlight ?"/>
+    <property name="fr" value="Ils ont volé un réverbère ?"/>
+    <property name="name" value="Sign"/>
+   </properties>
+  </object>
+  <object name="Wall" x="7946" y="93" width="51" height="321">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="projectiles" width="160" height="36"/>
+ <layer name="Calque 7" width="160" height="36">
+  <properties>
+   <property name="" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0rEJQCEQREETfxfao/0n3xJExBNuBjba9JUC3DYeGHlFt6e/3KLb019u0e3pL7fo9vQHAAAAAAAAAAAAAADwrjr3bXxwQpvrGx8AAAAAALDmB6ViSWI=
+  </data>
+ </layer>
+ <objectgroup name="spawn" width="160" height="36">
+  <object gid="852" x="2466" y="726">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="852" x="2574" y="710">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="852" x="2650" y="726">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="855" x="2792" y="446">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="852" x="872" y="724">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="852" x="1496" y="340">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="855" x="502" y="520">
+   <properties>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object gid="854" x="2578" y="276">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="852" x="2672" y="278">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="855" x="2840" y="180">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="852" x="3154" y="282">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="855" x="4452" y="256">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="854" x="7870" y="374">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="854" x="7814" y="364">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="853" x="7357" y="315">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="853" x="7360" y="244">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="853" x="7364" y="184">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object gid="853" x="5060" y="222">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="853" x="5060" y="162">
+   <properties>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object gid="853" x="1866" y="208">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="853" x="1866" y="146">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object gid="854" x="6280" y="696">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="854" x="6324" y="672">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="855" x="6750" y="978">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="855" x="6670" y="996">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="852" x="6296" y="732">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+  <object gid="852" x="5660" y="1448">
+   <properties>
+    <property name="id" value="6"/>
+   </properties>
+  </object>
+  <object gid="852" x="5710" y="1450">
+   <properties>
+    <property name="id" value="6"/>
+   </properties>
+  </object>
+  <object gid="852" x="5754" y="1458">
+   <properties>
+    <property name="id" value="6"/>
+   </properties>
+  </object>
+  <object gid="852" x="5804" y="1466">
+   <properties>
+    <property name="id" value="6"/>
+   </properties>
+  </object>
+  <object gid="852" x="5946" y="1452">
+   <properties>
+    <property name="id" value="6"/>
+   </properties>
+  </object>
+  <object gid="852" x="5656" y="1418">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="852" x="5598" y="1462">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="852" x="5528" y="1538">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="855" x="5484" y="1438">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="854" x="5366" y="1616">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="854" x="4208" y="1610">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="852" x="4070" y="1506">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="855" x="4050" y="1434">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="852" x="4062" y="1608">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+  <object gid="852" x="3968" y="1626">
+   <properties>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Calque 9" width="160" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt1EEOwBAQQFH3P9ccrPtGdYhEy3srwiQWP0oBvipWP4CtvfVVO3+aybQayXucK27r1h5maDU18kdmZzlXTxs6AgAAAAAAAAAAAAAAAAAAAAAAgP+7ADtfDck=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="50" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="hqtileset" tilewidth="50" tileheight="50">
+  <image source="images/hqtileset.png" width="1200" height="1200"/>
+ </tileset>
+ <tileset firstgid="577" name="AmeliaBoss" tilewidth="113" tileheight="150">
+  <image source="images/boss/AmeliaBoss.png" width="226" height="150"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="Amelia"/>
+    <property name="name" value="Amelia"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="579" name="willyBoss" tilewidth="113" tileheight="150">
+  <image source="images/boss/willyBoss.png" width="113" height="300"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="Willy"/>
+    <property name="name" value="Willy"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="581" name="hero" tilewidth="44" tileheight="96">
+  <image source="images/hero.png" width="220" height="960"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="hero"/>
+    <property name="name" value="Hero"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="631" name="screen1" tilewidth="100" tileheight="50">
+  <image source="images/boss/screen1.png" width="100" height="500"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="Screen"/>
+    <property name="name" value="Screen"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Calque 2" width="20" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0UEKACEIQFFv2clqjtEVo0UgoSDWMAz84G9E3sKqiFSnEpxFw8PDw8PDw8P7ysuaeP/4X7z3veKU2VuzZrR71o42tZW9izZPLcs8tfa74fk9l70e8G69aQ0adx9D
+  </data>
+ </layer>
+ <layer name="map" width="20" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0rENgDAMRFHvQ7aAFUgK2H8OaJCQOQgQUyD9k66zX+GkmFk5aWfHpIv5WvHw8PDw8PDw8PDw/ukNa2fXSXhZzPXCUrt3k3dmq+VNdaO3SR942w1bo9440moxI73av472xof1+wu0H+H7
+  </data>
+ </layer>
+ <objectgroup name="objects" width="20" height="50">
+  <object name="Amelia" gid="577" x="94" y="2350">
+   <properties>
+    <property name="_the" value="Amelia"/>
+    <property name="name" value="Amelia"/>
+   </properties>
+  </object>
+  <object name="Willy" gid="579" x="793" y="2350"/>
+  <object gid="581" x="469" y="114">
+   <properties>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+  <object name="Wall" x="186" y="2218" width="23" height="244">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="790" y="2216" width="23" height="244">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Sign" x="593" y="2345" width="63" height="109">
+   <properties>
+    <property name="_the" value="Sign"/>
+    <property name="ang" value="Closed... of cours..."/>
+    <property name="fr" value="Fermé... bien sur..."/>
+    <property name="name" value="Sign"/>
+   </properties>
+  </object>
+  <object name="Wall" x="379" y="-18" width="23" height="2017">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="597" y="-30" width="27" height="2026">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="BossSign" x="200" y="2445" width="603" height="56">
+   <properties>
+    <property name="_the" value="BossSign"/>
+    <property name="name" value="BossSign"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Calque 3" width="20" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKACAMBMEjEL+gTfz/M01tGyEIO7DVNScBAIAfTJOWdb8AgPc8G4X9Ftku7ECXAx81AMA=
+  </data>
+ </layer>
+ <objectgroup name="screen" width="20" height="50">
+  <object name="Screen" gid="631" x="857" y="2200"/>
+  <object name="Screen" gid="631" x="53" y="2200"/>
+ </objectgroup>
+</map>

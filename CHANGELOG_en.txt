@@ -1,0 +1,21 @@
+////// NTUI CHANGELOG \\\\\\
+
+-- version 1.1 ------
+
+- Add ingame mouse support
+- Add controls explanations in a new game
+- Text fixes
+- Credits effects bug fix
+- Shooter crash fix
+- Level 1 collision bug fix
+- Shooter controls fix
+- Ingame perfs optimization
+- Default controls modifications
+- Hitbox fix
+- Intro level will now end after 20 seconds if you're still alive
+- Intro level pause menu deletion
+- Source code comments
+
+-- version 1.0 -------
+
+- First release

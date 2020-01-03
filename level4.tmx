@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="80" height="30" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="hqtileset" tilewidth="50" tileheight="50">
+  <image source="images/hqtileset.png" width="1200" height="1200"/>
+ </tileset>
+ <tileset firstgid="577" name="Fond" tilewidth="50" tileheight="50">
+  <image source="images/Fond.png" width="750" height="750"/>
+ </tileset>
+ <tileset firstgid="802" name="poster" tilewidth="50" tileheight="50">
+  <image source="images/poster.png" width="450" height="2000"/>
+ </tileset>
+ <tileset firstgid="1162" name="hero" tilewidth="44" tileheight="96">
+  <image source="images/hero.png" width="220" height="960"/>
+  <tile id="0">
+   <properties>
+    <property name="_the" value="hero"/>
+    <property name="name" value="Hero"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Calque 5" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1zEOgCAQRUE4paf2RhTGwlgRyf5CTWaS7ckrgG0NAAAAAHgy+tsn+Le930ONfnVDu4h+mbFw/22TYa0fc/pl9Mvolzn7eYPr9Mtc/ezBNfplZn/jr88BJKkywQ==
+  </data>
+ </layer>
+ <layer name="Calque de Tile 1" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt2OlLVFEYx/E7c95lRfYPVP+MLYpgi5YgtND2qgUryUhFSypaaKOihTYqrMiKChfKJKWFLKnIFktKLLGSihZK6ysRc6JjPvdwh6N0Xnx45jcz3Ln3NzMMz2TEgyDD8zzP8zzP8zxvCMvUbqdhPCZgIiYhXXu8PWbm+hpcytNuT0M2cjAdM5BreO5g7e1f7+1czMN8LBDkhcLXzMJkTMFUQXbdUZge9fvysQzLsUKQC4SvNROzMBtzBNl1N7ZKUYY1WCvI5cLjLsJiLMFSQXbdg62t2Ibt2CHIOw3HyDTk1ShCMUoEOerrehL7Jdn9HcQhHMYRQT5qOEaeIW/EJmzGFkHu7zd4MOr7PfztDCpxFucE+byhv5Uo1OYq7MU+7McBQXbdiW1/l3EFdbgqyPWG/tZhvTY3oAIncQqnBdl1J7b93UYT7uCuIDcb+tuF3drcgypUowa1guy6E9v+nqIVz/BckNsM/R3DcW2ewHXcwE3cEmTJeecE4SW7vy68wVu8E+RuQ38XcFGbl/AQLXiEx4Ls+jNl2983fEcPegX5h6G/a2jQZiM68Aqv0SnIrjux7W+YCoIUDMcINXAeqf7u7x7ua/MBPuEzvuCrILvuxKa/xiCa/fcFXmqzPR5+/3XdiW1/Uey/7/FBmx/j4fdf153Y9hfF/hvjOx1XialU+P3XdSe2/UWx/46ir1SVmKNV+P3XdSe2/UWx/46hr7EqMcep/2P/7esv2f9P9Kc1+FNPbOjQz/snUNjeGA==
+  </data>
+ </layer>
+ <layer name="Calque 3" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztmEEOwiAQReEAjaf3TK56A7ceQV3IQkgkoRToUKidaf9LfpqwgpeZDkEpAAAAAAAA5PLQ9EjG6Om3BzXupDv82L2Pv/RgjTvpDr0/o6d1aBJrJVrcSXbo/eVCcZjzcV/IURyGtWYib5Te5uDvWsg/GPXcY2vvnsmfI6y9mpkCf3PiHu41o7eCm7/4P9jzjrgFHP2t7ec94OYvNU84w81fXHuovzri2SHZ39PmRcy7036496vDe3GU/A32LDdFy0XAuXsxBGdd6l+qv7MCf20cwV/pHSKcRak3itY7pnR/e89nyf4kzGqQ5wvfQ0EO
+  </data>
+ </layer>
+ <layer name="map" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztl20KwyAMhnVn2P1vsUsUeoX9cbfQwiZMsK5+bl2S9n0gaGkh8aGmVSkAAAAAAADAEZj1egR9eG8+rpf/53Z6Pebucyb4o8Dqcn7vT4pDytyz/nQVrqn7im3Iz8FfLij6SkrJIeX+jfNzdRfYchjXSoUEdyVCn0n7dG1f7R1gHPj7Dqn+uNTNpY5efN3LQHjMa3x0rnuK4gj9b69en3Mr3d9N1+cjtLyLk5Lvj5IRf+HZM5N66/Fn1Ln95dy1+DNKvr90jW5j7iox8k2y7zAUi/4RlOe34E8q1OffO5MY+TdeCNyl/p4lQChl
+  </data>
+ </layer>
+ <layer name="Calque 4" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlT9uwjAUxhMOgQTtBjNS/2z0AgU2eoHSDlQsrLC2Z2gHegeGACeApfQIbcdeAoT4ghJhosQyCZZj9P2kT4md9yz7y9Oz4xBCCCGEEEIIIeaYu47zk6CFa3p3+eZXwZ8/epgb3iWyjWJBvf7+T1iDXegl5t02agX12M0Z+bd297IRG/2bumbe4xD7nYnex/rLBv3LBv3Lhu3+yfpfX1FZ0HV/hLxi7k3jvzFdf7oZwbtPDf6tAn0F8knyrwJVI3N16O702zqghHOXoQvoMqUHHvImGv3zifOvJ8S2oYdIftxcNC8JlRifK5z7GrqBblN6sETet+beGvon9r9RyrVU8lTXvse5G1ATauX8fnmEOsLYC55hTYq1+SFZx5N8OyZmtyd41oGeoOec+zeAhsJ4KYkdR8YzxbxjYsh5swXyJmUD
+  </data>
+ </layer>
+ <layer name="Calque 6" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt2NtKAlEAheHBSV/BMPMVsrIeSs2ETAs6CpYHMK0gj+D5Of1vuhGJ7YjMHls/fDfioK4ZR9BxlFJKKaWUUjaXDG1+zImHY9R2na7ZfN1jq3k5v0r9ZnKNmTxnX/Lj3qfv8P8q7TpOBllcIYdr5F2/31kwumGnAm5RRAl3uNd+Rj2w0yOe8IwXvKKs/YyqsNMb3lFFDXU0LNrP5t+UJjt9oIU2PvGFb4v2s7kfduqgix76GGCo/YwasdMYE0wxwxwL7ad2nM335aDn9T8Upf4qxDXk4gBhRHRNbVSMvY4QxzESPuwX5TUPA3reznjf50jhApcB/Rxqu5YjlR8f
+  </data>
+ </layer>
+ <objectgroup name="objects" width="80" height="30" opacity="0.95">
+  <object gid="1162" x="750" y="1450">
+   <properties>
+    <property name="_the" value="player"/>
+   </properties>
+  </object>
+  <object name="Wall" x="153" y="1202" width="49" height="139">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="2762" y="1010" width="40" height="73">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3447" y="1111" width="41" height="72">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3498" y="1014" width="41" height="72">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3797" y="867" width="42" height="119">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="2062" y="805" width="41" height="136">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="2011" y="551" width="41" height="247">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="Wall" x="3547" y="608" width="39" height="184">
+   <properties>
+    <property name="_the" value="Wall"/>
+    <property name="name" value="Wall"/>
+   </properties>
+  </object>
+  <object name="BossTransfert" x="2737" y="554" width="332" height="241">
+   <properties>
+    <property name="_the" value="BossTransfert"/>
+    <property name="cutscene" value="nil"/>
+    <property name="map" value="level4_boss.lua"/>
+    <property name="name" value="BossTransfert"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
